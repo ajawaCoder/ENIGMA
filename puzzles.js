@@ -1,0 +1,107 @@
+
+const PUZZLES = [
+    {
+        id: "001",
+        title: "The First Transmission",
+        category: "CLASSIC CIPHER",
+        difficulty: "NOVICE",
+        type: "cipher",
+        message: "KHOOR ZRUOG",
+        description: "A mysterious message has been intercepted.",
+        clue: "Every letter has been shifted forward by three places.",
+        hint: "Move every letter three places backward in the alphabet.",
+        answer: "HELLO WORLD",
+        explanation: "This is a Caesar cipher with a shift of three."
+    },
+    {
+        id: "002",
+        title: "The Quiet Witness",
+        category: "HIDDEN MESSAGE",
+        difficulty: "NOVICE",
+        type: "hidden",
+        message: "Silent Owls Watch Every Road",
+        description: "A message has been hidden in plain sight.",
+        clue: "The beginning of every word matters.",
+        hint: "Read the first letter of each word.",
+        answer: "SOWER",
+        explanation: "The first letters spell S O W E R."
+    },
+    {
+        id: "003",
+        title: "The Three Names",
+        category: "LOGIC & DEDUCTION",
+        difficulty: "INTERMEDIATE",
+        type: "logic",
+        message: "ADA / BRAM / CLEO",
+        description: "Three agents each hold a different object.",
+        clue: "Ada does not have the key. Bram has neither the key nor the coin.",
+        hint: "If Bram has neither, he must have the map.",
+        answer: "CLEO",
+        explanation: "Bram has the map. Ada cannot have the key, leaving Cleo."
+    },
+    {
+        id: "004",
+        title: "A Shift in the Dark",
+        category: "CLASSIC CIPHER",
+        difficulty: "INTERMEDIATE",
+        type: "cipher",
+        message: "WKH GRRU LV RSHQ",
+        description: "A second transmission arrives.",
+        clue: "The alphabet has been shifted forward by three places.",
+        hint: "Move each letter three places backward.",
+        answer: "THE DOOR IS OPEN",
+        explanation: "This is another Caesar cipher."
+    },
+    {
+        id: "005",
+        title: "The Reversed Dispatch",
+        category: "CLASSIC CIPHER",
+        difficulty: "NOVICE",
+        type: "cipher",
+        message: "TERCES",
+        description: "The courier used the simplest concealment.",
+        clue: "No letters were changed.",
+        hint: "Read the message backward.",
+        answer: "SECRET",
+        explanation: "The message is simply reversed."
+    },
+    {
+        id: "006",
+        title: "The Alphabet Key",
+        category: "CLASSIC CIPHER",
+        difficulty: "ADVANCED",
+        type: "cipher",
+        message: "GSRH RH Z HVXIVG",
+        description: "The society's oldest substitution key has resurfaced.",
+        clue: "A pairs with Z, B with Y, C with X.",
+        hint: "This is called an Atbash cipher.",
+        answer: "THIS IS A SECRET",
+        explanation: "Each letter is replaced with its opposite in the alphabet."
+    },
+    {
+        id: "007",
+        title: "The Silent Count",
+        category: "HIDDEN MESSAGE",
+        difficulty: "INTERMEDIATE",
+        type: "hidden",
+        message: "3 - 1 - 20 / 4 - 15 - 7",
+        description: "A sequence conceals a simple instruction.",
+        clue: "A is 1, B is 2, and so on.",
+        hint: "Convert each number into its alphabet letter.",
+        answer: "CAT DOG",
+        explanation: "3=C, 1=A, 20=T, 4=D, 15=O, 7=G."
+    },
+    {
+        id: "008",
+        title: "The Honest Agent",
+        category: "LOGIC & DEDUCTION",
+        difficulty: "INTERMEDIATE",
+        type: "logic",
+        message: "ADA / BRAM / CLEO",
+        description: "One agent took a classified file.",
+        clue: "Exactly one statement is true. Ada says Bram took it. Bram says he did not. Cleo says Ada did not.",
+        hint: "Test each person as the person who took the file.",
+        answer: "ADA",
+        explanation: "If Ada took it, only Bram's statement is true."
+    }
+];

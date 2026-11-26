@@ -1,0 +1,426 @@
+
+:root {
+    --background: #100f0d;
+    --panel: #191713;
+    --gold: #c6a66b;
+    --gold-light: #e1c997;
+    --text: #eee5d4;
+    --muted: #928875;
+    --border: #403626;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    height: 85px;
+    border-bottom: 1px solid #30291f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    display: grid;
+    place-items: center;
+    font: 28px 'Cormorant Garamond';
+}
+
+.brand h2 {
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.brand small {
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 11px;
+    padding: 12px 0;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+    color: var(--gold-light);
+    border-bottom: 1px solid var(--gold);
+}
+
+.streak {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 0 55px;
+    border-bottom: 1px solid #30291f;
+}
+
+.eyebrow,
+.gold {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font: 55px/1.05 'Cormorant Garamond';
+    margin: 22px 0;
+}
+
+.hero h1 em {
+    color: var(--gold-light);
+}
+
+.hero p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.date {
+    margin-top: 22px;
+    color: var(--gold);
+    font: 10px 'DM Mono';
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 35px;
+    padding: 45px 0;
+}
+
+.game-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.game-heading h2 {
+    font: 30px 'Cormorant Garamond';
+    margin-top: 5px;
+}
+
+.status {
+    color: #8eae8d;
+    font: 10px 'DM Mono';
+    border: 1px solid #40563e;
+    padding: 7px 12px;
+}
+
+.dossier,
+.side-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 27px;
+}
+
+.case-number {
+    color: var(--muted);
+    font: 10px 'DM Mono';
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.category {
+    color: var(--gold);
+    font: 10px 'DM Mono';
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.dossier h3 {
+    font: 34px 'Cormorant Garamond';
+    margin: 10px 0;
+}
+
+.dossier > p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.encrypted {
+    margin-top: 25px;
+    background: #100f0d;
+    border: 1px solid var(--border);
+    padding: 25px;
+    text-align: center;
+}
+
+.encrypted small {
+    color: var(--muted);
+    font: 9px 'DM Mono';
+    letter-spacing: 2px;
+}
+
+.encrypted h2 {
+    color: var(--gold-light);
+    font: 25px 'DM Mono';
+    letter-spacing: 4px;
+    margin-top: 22px;
+    overflow-wrap: anywhere;
+}
+
+.clue {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.clue > span {
+    color: var(--gold);
+}
+
+.clue small,
+label {
+    color: var(--gold);
+    font: 9px 'DM Mono';
+    letter-spacing: 2px;
+}
+
+.clue p {
+    color: #b9ad98;
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 1.7;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.answer-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    background: #100f0d;
+    border: 1px solid var(--border);
+    color: white;
+    padding: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--gold);
+}
+
+.answer-row button {
+    background: var(--gold);
+    color: #17130d;
+    border: none;
+    padding: 0 22px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.answer-row button:hover {
+    background: var(--gold-light);
+}
+
+#feedback {
+    min-height: 35px;
+    padding-top: 12px;
+    font-size: 11px;
+    color: #c87969;
+}
+
+#feedback.success {
+    color: #8eae8d;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-size: 11px;
+}
+
+.notice {
+    display: none;
+    background: #262116;
+    border-left: 2px solid var(--gold);
+    padding: 14px;
+    color: #d1c3a9;
+    font-size: 11px;
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.side-card {
+    margin-bottom: 16px;
+}
+
+.side-card h2 {
+    font: 40px 'Cormorant Garamond';
+    margin-top: 20px;
+}
+
+.side-card h2 small {
+    color: var(--gold);
+    font: 10px 'DM Mono';
+}
+
+.side-card p {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.divider {
+    height: 1px;
+    background: var(--border);
+    margin: 20px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats h3 {
+    font: 24px 'Cormorant Garamond';
+}
+
+.stats small {
+    color: var(--muted);
+    font: 9px 'DM Mono';
+}
+
+.manual {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.manual > span {
+    color: var(--gold);
+    font: 23px 'Cormorant Garamond';
+}
+
+.manual b {
+    display: block;
+    font-size: 12px;
+}
+
+.manual small {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+footer {
+    border-top: 1px solid #30291f;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font: 9px 'DM Mono';
+    letter-spacing: 1px;
+}
+
+@media(max-width: 760px) {
+    header {
+        height: auto;
+        padding: 18px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media(max-width: 450px) {
+    .answer-row {
+        flex-direction: column;
+    }
+
+    .answer-row button {
+        padding: 14px;
+    }
+
+    .dossier,
+    .side-card {
+        padding: 19px;
+    }
+}

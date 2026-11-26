@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENIGMA — The Cipher Society</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="brand">
+        <div class="brand-icon">E</div>
+        <div>
+            <h2>ENIGMA</h2>
+            <small>THE CIPHER SOCIETY</small>
+        </div>
+    </div>
+
+    <nav>
+        <button class="nav-btn active" data-view="daily">Daily</button>
+        <button class="nav-btn" data-view="practice">Practice</button>
+        <button class="nav-btn" data-view="records">Records</button>
+    </nav>
+
+    <div class="streak">
+        ✦ <span id="streak">0</span> DAY STREAK
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="eyebrow">ESTABLISHED 1924</div>
+        <h1>Some secrets are<br><em>meant to be solved.</em></h1>
+        <p>Observe. Deduce. Decode.</p>
+        <div class="date" id="date"></div>
+    </section>
+
+    <section class="layout">
+
+        <div class="game">
+
+            <div class="game-heading">
+                <div>
+                    <small class="gold">CURRENT ASSIGNMENT</small>
+                    <h2 id="gameTitle">The First Transmission</h2>
+                </div>
+                <span class="status" id="status">ACTIVE</span>
+            </div>
+
+            <div class="dossier">
+
+                <div class="case-number" id="caseNumber">
+                    CASE FILE / 001
+                </div>
+
+                <div class="category" id="category">
+                    CLASSIC CIPHER
+                </div>
+
+                <h3 id="puzzleTitle">The First Transmission</h3>
+
+                <p id="description">
+                    A mysterious message has been intercepted.
+                    Recover its original wording.
+                </p>
+
+                <div class="encrypted">
+                    <small>INTERCEPTED MESSAGE</small>
+                    <h2 id="message">KHOOR ZRUOG</h2>
+                </div>
+
+                <div class="clue">
+                    <span>✧</span>
+                    <div>
+                        <small>FIELD NOTE</small>
+                        <p id="clue">Every letter has been shifted forward by the same number of places.</p>
+                    </div>
+                </div>
+
+                <form id="answerForm">
+                    <label for="answer">ENTER YOUR SOLUTION</label>
+                    <div class="answer-row">
+                        <input id="answer" placeholder="Your answer..." autocomplete="off">
+                        <button type="submit">SUBMIT ↗</button>
+                    </div>
+                </form>
+
+                <div id="feedback"></div>
+
+                <div class="actions">
+                    <button id="hintButton">✧ Request a hint</button>
+                    <button id="solutionButton">Reveal solution</button>
+                </div>
+
+                <div id="hintBox" class="notice"></div>
+                <div id="solutionBox" class="notice"></div>
+
+            </div>
+
+        </div>
+
+        <aside>
+
+            <div class="side-card">
+                <small class="gold">YOUR PROGRESS</small>
+                <h2 id="points">0 <small>PTS</small></h2>
+                <p>Total society points</p>
+
+                <div class="divider"></div>
+
+                <div class="stats">
+                    <div>
+                        <h3 id="solved">0</h3>
+                        <small>SOLVED</small>
+                    </div>
+                    <div>
+                        <h3 id="bestStreak">0</h3>
+                        <small>BEST STREAK</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-card">
+                <small class="gold">FIELD MANUAL</small>
+
+                <div class="manual">
+                    <span>I</span>
+                    <div><b>Observe</b><small>Study the evidence.</small></div>
+                </div>
+
+                <div class="manual">
+                    <span>II</span>
+                    <div><b>Deduce</b><small>Find the hidden pattern.</small></div>
+                </div>
+
+                <div class="manual">
+                    <span>III</span>
+                    <div><b>Decode</b><small>Submit your solution.</small></div>
+                </div>
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+<footer>
+    ENIGMA — THE CIPHER SOCIETY
+    <span>THINK CLEARLY. QUESTION EVERYTHING.</span>
+</footer>
+
+<script src="puzzles.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
